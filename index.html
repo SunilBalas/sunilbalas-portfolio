@@ -13,11 +13,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600&display=swap"
     rel="stylesheet" />
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <link rel="icon" href="/images/favicon.ico"/>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <link rel="icon" href="/images/favicon.ico" />
 </head>
 
 <body>
+
   <!-- arrow up section start -->
   <div class="scroll-up-btn">
     <i class="fas fa-angle-up"></i>
@@ -49,7 +51,7 @@
         <div class="text-1">Hello, I am</div>
         <div class="text-2">Sunil Balas</div>
         <div class="text-3">Software <span>Engineer</span></div>
-        <a href="#">Learn More</a>
+        <a href="#about">Learn More</a>
       </div>
     </div>
   </section>
@@ -81,6 +83,7 @@
     </div>
   </section>
   <!-- about section end -->
+
   <!-- skills section start -->
   <section class="skills" id="skills">
     <div class="max-width">
@@ -176,7 +179,6 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
   <!-- skills section end -->
 
@@ -188,11 +190,11 @@
         <div class="column left" data-aos="fade-up" data-aos-delay="0">
           <div class="card">
             <div class="box">
-                <i class="fas fa-laptop-medical"></i>
-                <h2 class="text">Medi-Care</h2>
-                <p>
-                  Medi-Care is a Flask based website. It works on predicting disease based on symptoms given to the model.
-                </p>
+              <i class="fas fa-laptop-medical"></i>
+              <h2 class="text">Medi-Care</h2>
+              <p>
+                Medi-Care is a Flask based website. It works on predicting disease based on symptoms given to the model.
+              </p>
             </div>
             <p style="text-align:center">
               <a class="button" href="https://github.com/SunilBalas/Medi-Care">Read More</a>
@@ -202,11 +204,12 @@
         <div class="column right" data-aos="fade-up" data-aos-delay="200">
           <div class="card">
             <div class="box">
-                <i class="fas fa-spider"></i>
-                <h2 class="text">Stackoverflow Scraper</h2>
-                <p>
-                  This Scraper is built using Scrapy which allows you to scrape information from the Stack Overflow website and save it in a structured format such as CSV or JSON.
-                </p>
+              <i class="fas fa-spider"></i>
+              <h2 class="text">Stackoverflow Scraper</h2>
+              <p>
+                This Scraper is built using Scrapy which allows you to scrape information from the Stack Overflow
+                website and save it in a structured format such as CSV or JSON.
+              </p>
             </div>
             <p style="text-align:center">
               <a class="button" href="https://github.com/SunilBalas/StackOverFlowScraper">Read More</a>
@@ -216,11 +219,12 @@
         <div class="column right" data-aos="fade-up" data-aos-delay="400">
           <div class="card">
             <div class="box">
-                <i class="fas fa-laptop-code"></i>
-                <h2 class="text">MCQ Generator</h2>
-                <p>
-                  This project is a Flask based website in which we need to give paragraph as a input and website will convert it into MCQs.
-                </p>
+              <i class="fas fa-laptop-code"></i>
+              <h2 class="text">MCQ Generator</h2>
+              <p>
+                This project is a Flask based website in which we need to give paragraph as a input and website will
+                convert it into MCQs.
+              </p>
             </div>
             <p style="text-align:center">
               <a class="button" href="https://github.com/SunilBalas">Read More</a>
@@ -228,7 +232,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
   <!-- projects section end -->
@@ -268,17 +271,17 @@
                 <input type="text" placeholder="Name" required>
               </div>
               <div class="field email">
-                <input type="email" placeholder="Email" required>
+                <input type="email" id="email" placeholder="Email" required>
               </div>
             </div>
             <div class="field">
               <input type="text" placeholder="Subject" required>
             </div>
             <div class="field textarea">
-              <textarea cols="30" rows="10" placeholder="Message..." required></textarea>
+              <textarea cols="30" rows="10" id="message" placeholder="Message..." required></textarea>
             </div>
             <div class="button-area">
-              <button type="submit">Send message</button>
+              <button type="submit" id="send_mail">Send message</button>
             </div>
           </form>
         </div>
