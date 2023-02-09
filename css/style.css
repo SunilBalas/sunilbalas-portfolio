@@ -272,26 +272,6 @@ footer p span {
   line-height: 30px;
 }
 
-.about .about-content .right a {
-  display: inline-block;
-  background: #14279b;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 10px 30px;
-  margin-top: 70px;
-  border-radius: 30px;
-  text-decoration: none;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.about .about-content .right a:hover {
-  color: #fff;
-  background: none;
-  border: 2px solid #14279b;
-}
-
 /* skills section styling */
 .skills .skills-content .column {
   width: calc(50% - 30px);

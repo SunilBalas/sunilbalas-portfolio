@@ -44,34 +44,3 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 });
-
-// download resume
-function downloadResume(fileName) {
-    var url = "../resume/" + fileName + ".pdf";
-
-    // Create XMLHTTP Request.
-    var req = new XMLHttpRequest();
-    req.open("GET", url, true);
-    req.responseType = "blob";
-    req.onload = function () {
-        // Convert the Byte Data to BLOB object.
-        var blob = new Blob([req.response], { type: "application/pdf" });
-
-        // Check the Browser type and download the File.
-        var isIE = false || !!document.documentMode;
-        if (isIE) {
-            window.navigator.msSaveBlob(blob, fileName);
-        } else {
-            var url = window.URL || window.webkitURL;
-            link = url.createObjectURL(blob);
-            var a = document.createElement("a");
-            a.setAttribute("download", fileName);
-            a.setAttribute("href", link);
-            document.body.appendChild(a);
-            a.link = "Resume-Sunil_Balas.pdf"
-            a.click();
-            document.body.removeChild(a);
-        }
-    };
-    req.send();
-};
